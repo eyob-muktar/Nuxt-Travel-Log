@@ -13,6 +13,7 @@ export default withNuxt((antfu({
     quotes: 'single',
     semi: true,
   },
+  ignores: ['.pnpm-store/**'],
 }, {
   rules: {
     'perfectionist/sort-imports': ['error', {
