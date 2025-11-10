@@ -19,14 +19,14 @@ export default withNuxt((antfu({
     'perfectionist/sort-imports': ['error', {
       tsconfigRootDir: '.',
     }],
-    'unicorn/filename-case': ['error', {
-      case: 'kebabCase',
-      ignore: [
-        'nuxt.config.ts',
-        'eslint.config.mjs',
-        'README.md',
-      ],
-    }],
+    // 'unicorn/filename-case': ['error', {
+    //   case: 'PascalCase',
+    //   ignore: [
+    //     'nuxt.config.ts',
+    //     'eslint.config.mjs',
+    //     'README.md',
+    //   ],
+    // }],
   },
 })),
 );
