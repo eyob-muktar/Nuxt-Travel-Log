@@ -16,6 +16,12 @@ export default withNuxt((antfu({
   ignores: ['.pnpm-store/**'],
 }, {
   rules: {
+    'ts/no-redeclare': 'off',
+    'ts/consistent-type-definitions': ['error', 'type'],
+    'no-console': 'warn',
+    'antfu/no-top-level-await': 'off',
+    'node/prefer-global/process': 'off',
+    'node/no-process-env': 'error',
     'perfectionist/sort-imports': ['error', {
       tsconfigRootDir: '.',
     }],
